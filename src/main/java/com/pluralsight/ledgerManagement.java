@@ -65,9 +65,9 @@ public class ledgerManagement {
 
             while ((line = br.readLine()) != null){
                 String[] tokens = line.split("\\|");
-                String type = tokens[2];
+                String amount = tokens[tokens.length - 1];
 
-                if (type.equalsIgnoreCase("Deposit")){
+                if (Double.parseDouble(amount) > 0) {
                     System.out.println(line);
                     hasDeposits = true;
                 }
@@ -83,22 +83,22 @@ public class ledgerManagement {
 
     private static void displayPayments() {
         try (BufferedReader br = new BufferedReader(new FileReader(dateFileName))) {
-         String line;
-         boolean hasPayment = false;
-         System.out.println("\n----- Payment(s) -----");
+            String line;
+            boolean hasPayment = false;
+            System.out.println("\n----- Payment(s) -----");
 
-         while ((line = br.readLine()) != null) {
-             String[] tokens = line.split("\\|");
-             String type = tokens[2];
+            while ((line = br.readLine()) != null) {
+                String[] tokens = line.split("\\|");
+                String amount = tokens[tokens.length - 1];
 
-             if (type.equalsIgnoreCase("Payment")) {
-                 System.out.println(line);
-                 hasPayment = true;
-             }
-         }
-         if (!hasPayment){
-             System.out.println("No payments found");
-         }
+                if (Double.parseDouble(amount) < 0) {
+                    System.out.println(line);
+                    hasPayment = true;
+                }
+            }
+            if (!hasPayment){
+                System.out.println("No payments found");
+            }
 
         }catch (Exception e){
             System.out.println("There was an error reading the transactions: " + e.getMessage());
@@ -130,8 +130,8 @@ public class ledgerManagement {
 
         //Saving the payment
         String transaction = String.format("%s|%s|%s|%s|%s", date, time, description, vendor, amount);
-            saveTransaction(transaction);
-            System.out.println("The deposit has been recorded successfully!");
+        saveTransaction(transaction);
+        System.out.println("The deposit has been recorded successfully!");
 
 
     }

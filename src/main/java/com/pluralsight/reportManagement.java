@@ -2,13 +2,14 @@ package com.pluralsight;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class reportManagement {
     private static final String dataFileName = "transactions.csv";
     private static final Scanner scanner = new Scanner(System.in);
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public static void displayReports() {
         while (true) {
@@ -25,21 +26,22 @@ public class reportManagement {
 
             switch (choice) {
                 case "1":
-                    filterByDate(getCurrentMonthStart(), new Date());
-                    break;
+                    filterByDate(getCurrentMonthStart(), LocalDate.now());
+                    continue;
                 case "2":
                     filterByDate(getPreviousMonthStart(), getPreviousMonthEnd());
-                    break;
+                    continue;
                 case "3":
-                    filterByDate(getCurrentYearStart(), new Date());
-                    break;
+                    filterByDate(getCurrentYearStart(), LocalDate.now());
+                    continue;
                 case "4":
                     filterByDate(getPreviousYearStart(), getPreviousYearEnd());
+                    continue;
                 case "5":
                     System.out.println("Enter vendor name: ");
                     String vendor = scanner.nextLine();
                     filterByVendor(vendor);
-                    break;
+                    continue;
                 case "0":
                     return;
                 default:
@@ -51,25 +53,20 @@ public class reportManagement {
         }
     }
 
-    private static void filterByDate(Date startDate, Date endDate) {
-        System.out.println("\n---- Filtered by Date ----");
-        SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd");
-        try (BufferedReader BR = new BufferedReader(new FileReader(dataFileName))) {
+    private static void filterByDate(LocalDate startdate, LocalDate endDate) {
+        System.out.println("\n----- Filter by Date -----");
+        try (BufferedReader br = new BufferedReader(new FileReader(dataFileName))){
             String line;
-            while ((line = BR.readLine()) != null) {
+            while ((line = br.readLine()) != null) {
                 String[] tokens = line.split("\\|");
-                Date transactionDate = SDF.parse(tokens[0]);
-                if ((transactionDate.equals(startDate) || transactionDate.after(startDate)) &&
-                        (transactionDate.equals(endDate) || transactionDate.before(endDate))) {
+                LocalDate transactionDate = LocalDate.parse(tokens[0], formatter);
+                if (!transactionDate.isBefore(startdate) && !transactionDate.isAfter(endDate)) {
                     System.out.println(line.replace('|', ' '));
                 }
-
             }
-
-        } catch (Exception e) {
-            System.out.println("Error reading ledger: " + e.getMessage());
+        } catch (Exception e){
+            System.out.println("Error reading ledger: " +e.getMessage());
         }
-
     }
 
     private static void filterByVendor(String vendor) {
@@ -88,28 +85,28 @@ public class reportManagement {
 
     }
 
-    private static Date getCurrentMonthStart() {
-        return new Date();
+    private static LocalDate getCurrentMonthStart() {
+        return LocalDate.now().withDayOfMonth(1);
     }
 
-    private static Date getPreviousMonthStart() {
-        return new Date();
+    private static LocalDate getPreviousMonthStart() {
+        return LocalDate.now().minusMonths(1).withDayOfMonth(1);
     }
 
-    private static Date getPreviousMonthEnd() {
-        return new Date();
+    private static LocalDate getPreviousMonthEnd() {
+        return LocalDate.now().minusMonths(1).withDayOfMonth(LocalDate.now().minusMonths(1).lengthOfMonth());
     }
 
-    private static Date getCurrentYearStart() {
-        return new Date();
+    private static LocalDate getCurrentYearStart() {
+        return LocalDate.now().withDayOfYear(1);
     }
 
-    private static Date getPreviousYearStart() {
-        return new Date();
+    private static LocalDate getPreviousYearStart() {
+        return LocalDate.now().minusYears(1).withDayOfYear(1);
     }
 
-    private static Date getPreviousYearEnd() {
-        return new Date();
+    private static LocalDate getPreviousYearEnd() {
+        return LocalDate.now().minusYears(1).withDayOfYear(LocalDate.now().minusYears(1).lengthOfYear());
     }
 
 }
