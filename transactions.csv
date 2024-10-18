@@ -1,16 +1,93 @@
-2024-10-01|09:30:00|Office Supplies Purchase|Staples|150.75
-2024-10-02|14:00:00|Client Consultation Fee|John Doe Consulting|1200.00
-2024-10-03|11:15:00|Software Subscription|Tech Solutions|299.99
-2024-10-04|16:45:00|Website Hosting Fee|WebHost Inc.|99.99
-2024-10-05|10:00:00|Marketing Campaign Expense|Ad Agency|500.00
-2024-10-06|13:30:00|Employee Salary|ABC Corp.|3000.00
-2024-10-07|08:00:00|Equipment Purchase|Best Buy|1200.00
-2024-10-08|15:00:00|Business Lunch with Client|Local Bistro|75.50
-2024-10-09|09:00:00|Travel Expense|Delta Airlines|350.00
-2024-10-10|14:30:00|Training Workshop|Skill Development Inc.|450.00
-2024-10-11|12:00:00|Utility Bill|City Utilities|200.25
-2024-10-12|17:00:00|Inventory Purchase|Wholesale Mart|1800.00
-2024-10-13|10:30:00|Freelance Graphic Design|Creative Services|600.00
-2024-10-14|09:45:00|Office Rent|Landlord Inc.|2500.00
-2024-10-15|11:00:00|Tax Payment|IRS|1500.00
-2023-04-17|16:30:00|Cleaning Supplies|Walmart|-50.00
+2024-01-15|10:23:00|Grocery Store|SuperMart|150.75
+2024-02-10|14:45:00|Gas Station|QuickFuel|-45.20
+2023-12-05|09:15:00|Online Subscription|StreamNow|-12.99
+2023-11-25|11:00:00|Freelance Payment|WebDesignCo|600.00
+2023-10-30|17:30:00|Restaurant|DineFine|-75.50
+2023-09-18|08:00:00|Salary|ABC Corp|3000.00
+2023-08-12|13:00:00|Book Purchase|Local Bookstore|-20.00
+2023-07-22|16:15:00|Utility Bill|EnergyCo|-120.00
+2023-06-05|10:00:00|Cash Deposit|Bank Branch|500.00
+2023-05-30|19:45:00|Coffee Shop|Brewed Awakenings|-4.75
+2022-12-01|08:30:00|Holiday Bonus|ABC Corp|500.00
+2022-11-15|14:00:00|Gym Membership|FitClub|-35.00
+2022-10-10|17:00:00|Concert Tickets|LiveNation|-150.00
+2022-09-05|10:00:00|Online Sale|Etsy Shop|200.00
+2022-08-21|09:45:00|Movie Night|Cinema City|-30.00
+2022-07-18|13:30:00|Investment Dividend|InvestCo|75.00
+2022-06-12|11:15:00|Dinner Out|The Fancy Fork|-95.20
+2022-05-30|15:00:00|Cash Withdrawal|ATM|-100.00
+2022-04-17|09:00:00|Birthday Gift|Online Retailer|250.00
+2022-03-29|19:15:00|Home Repair|FixIt Services|-500.00
+2022-02-10|12:30:00|Sales Commission|ABC Corp|450.00
+2022-01-22|10:45:00|Online Course|EduPlatform|-199.99
+2024-02-25|16:20:00|Charity Donation|HelpNow|-50.00
+2023-11-05|13:50:00|Pet Food|Pet Supplies Co|-40.00
+2023-09-25|09:30:00|Online Store Purchase|GadgetsGalore|-60.00
+2023-07-14|14:00:00|Freelance Project|DesignAgency|800.00
+2023-06-30|11:10:00|Monthly Subscription|FitnessApp|-29.99
+2023-05-01|18:00:00|Cash Deposit|Bank Branch|200.00
+2023-03-18|12:45:00|Clothing Purchase|FashionHub|-120.00
+2022-12-15|10:00:00|Christmas Shopping|Mall|-300.00
+2022-11-10|15:30:00|Rental Income|PropertyManagement|1200.00
+2022-10-05|09:00:00|Electricity Bill|PowerGrid|-75.00
+2022-09-12|16:30:00|Dinner|Family Restaurant|-65.00
+2022-08-22|11:45:00|Paycheck|XYZ Corp|2800.00
+2022-07-11|14:20:00|Delivery Service|FoodExpress|-25.00
+2022-06-02|10:10:00|Cash Gift|Birthday Party|150.00
+2022-05-14|19:00:00|Home Insurance|InsureCo|-200.00
+2022-04-28|09:15:00|Book Sale|Used Books|20.00
+2022-03-09|13:00:00|Office Supplies|Stationery World|-50.00
+2022-02-11|17:30:00|Web Hosting|HostMe|-15.00
+2022-01-25|08:00:00|Freelance Work|CreativeAgency|400.00
+2024-03-03|12:00:00|Investment Returns|InvestSmart|100.00
+2023-12-20|14:45:00|Mobile Phone Bill|MobileNet|-55.00
+2023-11-30|16:00:00|Online Savings|Bank Online|300.00
+2024-04-01|10:05:00|Shopping|TechStore|-250.00
+2024-03-15|11:30:00|Freelance Project|DesignStudio|700.00
+2023-12-30|13:20:00|Rental Payment|Landlord|-800.00
+2023-11-15|08:50:00|Donation|CharityOrg|-100.00
+2023-10-25|14:00:00|Car Maintenance|Auto Shop|-150.00
+2023-09-10|16:40:00|Cash Gift|Family Reunion|200.00
+2023-08-18|12:00:00|Online Course|LearnNow|-99.99
+2023-07-04|18:30:00|Fireworks Show|Event Co|-50.00
+2023-06-15|10:15:00|Grocery Delivery|QuickGrocer|-60.00
+2023-05-12|14:45:00|Cash Deposit|Bank Branch|400.00
+2022-12-18|09:00:00|Office Party|Catering Co|-300.00
+2022-11-28|13:15:00|Online Purchase|HomeGoods|-75.00
+2022-10-17|17:00:00|Freelance Payment|ContentCreators|350.00
+2022-09-22|09:30:00|Health Insurance|HealthInsure|-220.00
+2022-08-14|15:45:00|Local Farmers Market|FreshProduce|-40.00
+2022-07-30|11:30:00|Paycheck|XYZ Corp|2700.00
+2022-06-25|12:00:00|Pet Grooming|Pet Spa|-80.00
+2022-05-11|09:45:00|Gift Card Purchase|Retail Store|-100.00
+2022-04-23|13:30:00|Utility Payment|WaterCo|-60.00
+2022-03-12|10:05:00|Online Sale|Etsy Shop|150.00
+2022-02-17|16:20:00|Dinner Out|Cozy Café|-55.00
+2022-01-29|11:00:00|Cash Deposit|Bank Branch|300.00
+2024-05-05|08:15:00|Clothing Purchase|Fashion Retailer|-85.00
+2023-11-22|19:30:00|Bookstore|ReadWell|-40.00
+2023-10-08|10:45:00|Food Delivery|QuickEats|-30.00
+2023-09-01|14:10:00|Salary|ABC Corp|3200.00
+2023-07-25|09:20:00|Online Subscription|CloudStorage|-12.99
+2023-06-14|12:30:00|Rental Income|PropertyOwner|1000.00
+2023-05-27|17:05:00|Takeout|Bistro|-70.00
+2023-04-15|08:00:00|Cash Gift|Graduation Party|250.00
+2023-03-02|15:00:00|Home Repair|Handyman Service|-300.00
+2023-02-19|14:50:00|Investment Dividend|Stock Dividends|90.00
+2023-01-31|13:25:00|Online Class|SkillShare|-99.00
+2024-06-10|18:45:00|Concert Tickets|MusicFest|-120.00
+2024-07-08|11:15:00|Freelance Project|WebDev Agency|650.00
+2023-12-25|19:00:00|Christmas Gifts|Online Retailer|-400.00
+2023-11-11|08:30:00|Utility Bill|Electricity Co|-80.00
+2023-10-14|14:15:00|Dinner Reservation|Nice Restaurant|-100.00
+2023-09-20|16:00:00|Book Sale|Secondhand Store|35.00
+2023-08-05|10:50:00|Mobile Service|PhoneProvider|-45.00
+2023-07-09|12:00:00|Cash Deposit|Bank Branch|200.00
+2023-06-22|19:30:00|Home Cleaning|Cleaners R Us|-150.00
+2023-05-04|09:10:00|Art Supplies|CraftStore|-60.00
+2023-04-27|15:30:00|Gift Purchase|Online Gift Shop|-80.00
+2023-03-05|10:40:00|Paycheck|XYZ Corp|2900.00
+2023-02-15|13:50:00|Fitness Equipment|FitStore|-500.00
+2024-01-20|11:25:00|Online Workshop|Learning Hub|100.00
+2023-12-15|09:15:00|Charity Event|Fundraiser|-70.00
+2023-11-30|16:10:00|Movie Tickets|Cinema|-40.00
